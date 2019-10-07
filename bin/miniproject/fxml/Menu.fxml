@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="399.0" prefWidth="555.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="miniproject.MenuController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label cache="true" cacheHint="SCALE" layoutX="220.0" layoutY="83.0" text="MENU..." textAlignment="CENTER" wrapText="false">
+      <font>
+        <Font name="Aharoni Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button id="InsertionSortBtn" layoutX="191.0" layoutY="138.0" mnemonicParsing="false" onAction="#interectionsort" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: lightgray; -fx-border-color: #000000; -fx-border-radius: 5px; " text="Insertion Sort" textFill="BLACK">
+      <font>
+        <Font name="Andalus" size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button id="ExitBtn" font="$x1" layoutX="191.0" layoutY="324.0" mnemonicParsing="false" onAction="#exit" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: lightgray; -fx-border-color: #000000; -fx-border-radius: 5px; " text="EXIT." />
+    <Button id="HanoiTowerBtn" font="$x1" layoutX="191.0" layoutY="262.0" mnemonicParsing="false" onAction="#towerproblem" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: lightgray; -fx-border-color: #000000; -fx-border-radius: 5px; " text="HaNoi Tower Prob." />
+    <Button id="ShellSortBtn" font="$x1" layoutX="191.0" layoutY="200.0" mnemonicParsing="false" onAction="#shellsort" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: lightgray; -fx-border-color: #000000; -fx-border-radius: 5px; " text="Shell Sort" />
+    <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>

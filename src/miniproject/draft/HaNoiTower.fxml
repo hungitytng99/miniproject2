@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="673.0" prefWidth="1047.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miniproject.HanoiTowerController">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="0.0" prefWidth="41.0" style="-fx-background-color: none;" text="Back" />
+      <Label layoutX="75.0" layoutY="18.0" text="Shell Sort">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="HaNoi Tower Problems" textFill="#4C70F3">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="playerContainer" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="40.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="pauseBtn" mnemonicParsing="false" onAction="#pause" text="pause" />
+                  <Button fx:id="playBtn" mnemonicParsing="false" onAction="#play" text="play" />
+               </children>
+            </HBox>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="20.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label text="Enter the number of disks: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <FlowPane.margin>
+                        <Insets />
+                     </FlowPane.margin>
+                  </Label>
+                  <TextField fx:id="Text" prefHeight="39.0" prefWidth="50.0" style="-fx-border-color: #4C70F3;" text="3">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#go" style="-fx-background-color: #4C70F3" text="START" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </FlowPane>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <HBox fx:id="animationPane" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EEEEEF;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+      </HBox>
+   </center>
+</BorderPane>

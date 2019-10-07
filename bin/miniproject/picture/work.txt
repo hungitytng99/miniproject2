@@ -1,0 +1,8 @@
+Hoài Vũ  : - Hanoitown'problem algorithm
+	    - use case diagram 
+	    - class diagram		
+Mạnh Hùng : - insertion sort algorithm
+	    - shell sort algorithm
+	    - desig application
+
+  

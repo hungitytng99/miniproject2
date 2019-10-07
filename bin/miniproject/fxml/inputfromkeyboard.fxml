@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="102.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miniproject.InputKeyboardController">
+   <children>
+      <Label layoutX="14.0" layoutY="32.0" text="Element">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="stt" layoutX="101.0" layoutY="32.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="31.0" text=":">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sttField" alignment="CENTER_RIGHT" layoutX="145.0" layoutY="23.0" onAction="#inputkeyboard" prefHeight="31.0" prefWidth="113.0" promptText="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

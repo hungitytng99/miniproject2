@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="Content" prefHeight="673.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="miniproject.InsertionSortController">
+  <right>
+    <SplitPane dividerPositions="0.8244514106583072" focusTraversable="true" prefHeight="649.0" prefWidth="1278.0">
+      <items>
+        <BorderPane fx:id="Content" prefHeight="647.0" prefWidth="1058.0" />
+        <VBox prefHeight="200.0" prefWidth="100.0">
+          <children>
+            <TitledPane animated="false" text="Describle Algorithm">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="159.0" prefWidth="214.0">
+                  <children>
+                    <Label layoutX="6.0" layoutY="-4.0" text="Code C/C++">
+                      <font>
+                        <Font name="System Bold" size="16.0" />
+                      </font>
+                    </Label>
+                    <TextArea editable="false" layoutX="0.0" layoutY="22.0" prefHeight="137.0" prefWidth="189.0" text="" wrapText="true" />
+                    <SplitMenuButton layoutX="199.0" layoutY="138.0" minHeight="13.0" minWidth="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="SplitMenuButton" textFill="RED">
+                      <items>
+                        <MenuItem mnemonicParsing="false" text="More Information" />
+                      </items>
+                    </SplitMenuButton>
+                  </children>
+                </AnchorPane>
+              </content>
+              <font>
+                <Font name="System Bold" size="14.0" fx:id="x2" />
+              </font>
+            </TitledPane>
+            <TitledPane animated="false" font="$x1" text="Initialize">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="217.0">
+                  <children>
+                    <Label layoutX="5.0" layoutY="11.0" text="Number of elements :">
+                      <font>
+                        <Font name="System Bold" size="12.0" />
+                      </font>
+                    </Label>
+                    <TextField fx:id="numofarray" alignment="CENTER_RIGHT" layoutX="135.0" layoutY="9.0" onAction="#inputNum" prefWidth="66.0" promptText="Input." />
+                    <Button layoutX="135.0" layoutY="34.0" mnemonicParsing="false" onAction="#inputNum" prefWidth="66.0" text="OK" />
+                    <Separator layoutX="8.0" layoutY="62.0" prefWidth="200.0" />
+                    <Label layoutX="5.0" layoutY="67.0" text="Input method :">
+                      <font>
+                        <Font size="12.0" fx:id="x1" />
+                      </font>
+                    </Label>
+                    <Button layoutX="27.0" layoutY="89.0" mnemonicParsing="false" onAction="#inputRandom" prefWidth="75.0" text="Random" />
+                    <Button layoutX="124.0" layoutY="89.0" mnemonicParsing="false" onAction="#inputKeyboard" prefWidth="75.0" text="KeyBoard" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" font="$x1" text="Control">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="137.0" prefWidth="217.0">
+                  <children>
+                    <RadioButton fx:id="increase" layoutX="24.0" layoutY="15.0" mnemonicParsing="false" text="Increase" />
+                    <RadioButton fx:id="decrease" layoutX="121.0" layoutY="15.0" mnemonicParsing="false" text="Decrease" />
+                    <Separator layoutX="9.0" layoutY="51.0" prefWidth="200.0" />
+                    <Button layoutX="124.0" layoutY="73.0" mnemonicParsing="false" onAction="#start" text="Start">
+                      <font>
+                        <Font name="Times New Roman Bold" size="18.0" fx:id="x3" />
+                      </font>
+                    </Button>
+                    <Button fx:id="btnPause" font="$x3" layoutX="22.0" layoutY="72.0" mnemonicParsing="false" onAction="#pause" text="Pause" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </TitledPane>
+          </children>
+        </VBox>
+      </items>
+    </SplitPane>
+  </right>
+  <top>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>
